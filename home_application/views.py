@@ -16,7 +16,6 @@ def home(request):
     return render_mako_context(request, '/home_application/home.html', ctx)
 
 
-@csrf_exempt
 def multiplication_computer(request):
     multiplier = int(request.POST.get('multiplier', ''))
     multiplicand = int(request.POST.get('multiplicand', ''))
